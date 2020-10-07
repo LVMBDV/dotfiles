@@ -9,3 +9,5 @@ export	EDITOR="vim"\
 	PATH="$HOME/.perl5/bin$:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$HOME/.rvm/bin:/var/lib/snapd/snap/bin:$HOME/.npm-packages/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+[[ -s "$HOME/.bashrc" ]] && source "$HOME/.bashrc"

@@ -18,7 +18,8 @@ Plug 'jlanzarotta/bufexplorer'
 Plug 'luochen1990/rainbow'
 Plug 'vim-scripts/paredit.vim'
 Plug 'vim-syntastic/syntastic'
-Plug 'codota/tabnine-vim'
+Plug 'zxqfl/tabnine-vim'
+Plug 'posva/vim-vue'
 call plug#end()
 
 " no startup message
@@ -118,6 +119,8 @@ nnoremap <c-b> :BufExplorer<cr>
 
 " autocompletion settings
 set completeopt=menuone,preview
+let g:deoplete#enable_at_startup = 1
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " disable gitgutter on startup
 let g:gitgutter_enabled = 0
