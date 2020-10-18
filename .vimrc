@@ -20,6 +20,7 @@ Plug 'vim-scripts/paredit.vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'zxqfl/tabnine-vim'
 Plug 'posva/vim-vue'
+Plug 'dart-lang/dart-vim-plugin'
 call plug#end()
 
 " no startup message
