@@ -71,6 +71,7 @@ function ix() {
 alias ls="ls --color=auto"
 alias ll="ls --color=auto -hal"
 alias tree="tree -C"
+alias glog="git log --oneline"
 
 PS1='\W '
 PS2='| '
@@ -82,7 +83,5 @@ elif [ -n "$SSH_CONNECTION" ]; then
 elif [ $USER != 'atak' ]; then
 	PS1="\u:$PS1";
 fi
-
-[[ -f "$HOME/.fzf.bash" ]] && source "$HOME/.fzf.bash"
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash

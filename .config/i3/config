@@ -2,7 +2,7 @@
 
 set $mod Mod4
 
-font pango:monospace 11
+font pango:Terminus 9
 
 for_window [class="^.*"] border pixel 0
 
@@ -61,13 +61,18 @@ mode "resize" {
 	bindsym Escape mode "default"
 }
 
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec gnome-terminal
 bindsym $mod+d exec dmenu_run
-bindsym $mod+e exec chromium-browser
-bindsym $mod+s exec scrot '%F+%R.png' -e 'mv $f ~/Pictures/Screenshots/'
-bindsym $mod+x exec scrot -u '%F+%R.png' -e 'mv $f ~/Pictures/Screenshots/'
+bindsym $mod+e exec firefox
+bindsym $mod+s exec maim ~/Pictures/Screenshots/$(date +%s).png
+bindsym $mod+Shift+s exec maim | xclip -selection clipboard -t image/png
+bindsym $mod+x exec maim -s ~/Pictures/Screenshots/$(date +%s).png
+bindsym $mod+Shift+x exec maim -s | xclip -selection clipboard -t image/png
+
+exec --no-startup-id feh --bg-fill -z ~/Pictures/Wallpapers
 
 bar {
 	position top
 	status_command i3status
+	tray_output HDMI-0
 }

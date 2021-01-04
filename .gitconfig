@@ -1,6 +1,6 @@
 [user]
 	name = Ata Kuyumcu
-	email = ata.kuyumcu@hey.com
+	email = ata.kuyumcu@yandex.ru
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
