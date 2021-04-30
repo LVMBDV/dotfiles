@@ -83,5 +83,3 @@ elif [ -n "$SSH_CONNECTION" ]; then
 elif [ $USER != 'atak' ]; then
 	PS1="\u:$PS1";
 fi
-
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
